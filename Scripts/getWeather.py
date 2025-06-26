@@ -4,8 +4,11 @@ import csv
 import os
 
 API_KEY = "d0880b1c-e430-4eba-8bcb-68c6605e7a6e"
+city = "Islamabad"
+state = "Islamabad"
+country = "Pakistan"
 
-url = f"https://api.airvisual.com/v2/nearest_city?key={API_KEY}"
+url = f"https://api.airvisual.com/v2/city?city={city}&state={state}&country={country}&key={API_KEY}"
 
 response = requests.get(url)
 
@@ -38,7 +41,7 @@ if response.status_code == 200:
         "wind_speed": weather["ws"]
     }
     print(row)
-    # os.makedirs("../Data", exist_ok=True)
+    
     with open("Data/weather_init.csv","a") as f:
         f.write("\n")
         for key in row:
