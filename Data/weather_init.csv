@@ -1,1 +1,2 @@
 timestamp,city,state,country,latitude,longitude,aqius,mainus,aqicn,maincn,temperature,humidity,pressure,wind_direction,wind_speed
+2025-06-26T12:00:00.000Z,Chicago Loop,Illinois,USA,41.884655,-87.616157,59,p2,20,p2,28,73,1016,230,3.56
