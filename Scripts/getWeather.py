@@ -38,8 +38,8 @@ if response.status_code == 200:
         "wind_speed": weather["ws"]
     }
     print(row)
-    os.makedirs("../Data", exist_ok=True)
-    with open("../Data/weather_init.csv","a") as f:
+    # os.makedirs("../Data", exist_ok=True)
+    with open("Data/weather_init.csv","a") as f:
         f.write("\n")
         for key in row:
             if(key!="wind_speed"):
