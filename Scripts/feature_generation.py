@@ -1,7 +1,7 @@
 import pandas as pd
 from datetime import datetime
 
-df = pd.read_csv("../Data/raw/weather_init.csv")
+df = pd.read_csv("../Data/weather_init.csv")
 
 df.columns = [
     "timestamp", "city", "state", "country", "lat", "lon",

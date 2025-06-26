@@ -39,7 +39,7 @@ if response.status_code == 200:
     }
     print(row)
     
-    with open("../Data/raw/weather_init.csv","a") as f:
+    with open("../Data/weather_init.csv","a") as f:
         f.write("\n")
         for key in row:
             if(key!="wind_speed"):
