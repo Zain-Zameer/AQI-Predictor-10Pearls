@@ -3,16 +3,12 @@ import json
 import csv
 import os
 
-# Your API key
 API_KEY = "d0880b1c-e430-4eba-8bcb-68c6605e7a6e"
 
-# Nearest city based on IP
 url = f"https://api.airvisual.com/v2/nearest_city?key={API_KEY}"
 
-# Make the request
 response = requests.get(url)
 
-# Handle the response
 if response.status_code == 200:
     data = response.json()
     
