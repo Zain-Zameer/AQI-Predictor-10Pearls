@@ -20,5 +20,5 @@ df['aqius_change'] = df['aqius'].diff().fillna(0)
 
 df['aqius_future'] = df['aqius'].shift(-3)
 
-df.to_csv("../Data/features.csv", index=False)
+df.to_csv("Data/features.csv", index=False)
 
